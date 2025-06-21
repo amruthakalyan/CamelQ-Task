@@ -4,27 +4,27 @@ import './Grocery.css';
 
 const groceryData = {
   Fruits: [
-    { name: 'Apples', price: '₹120/kg', img: './images/apples.jpg' },
-    { name: 'Bananas', price: '₹50/dozen', img: './images/banana.jpg' },
-    { name: 'Oranges', price: '₹80/kg', img: './images/orange.jpg' },
-    { name: 'Grapes', price: '₹90/kg', img: './images/grapes.jpg' },
+    { name: 'Apples', price: '₹120/kg', img: '/images/apples.jpg' },
+    { name: 'Bananas', price: '₹50/dozen', img: '/images/banana.jpg' },
+    { name: 'Oranges', price: '₹80/kg', img: '/images/orange.jpg' },
+    { name: 'Grapes', price: '₹90/kg', img: '/images/grapes.jpg' },
   ],
   Vegetables: [
-    { name: 'Tomatoes', price: '₹30/kg', img: './images/tomatos.jpg' },
-    { name: 'Potatoes', price: '₹25/kg', img: './images/potatos.jpg' },
-    { name: 'Onions', price: '₹35/kg', img: './images/onions.jpg' },
-    { name: 'Carrots', price: '₹40/kg', img: './images/carriot.jpg' },
+    { name: 'Tomatoes', price: '₹30/kg', img: '/images/tomatos.jpg' },
+    { name: 'Potatoes', price: '₹25/kg', img: '/images/potatos.jpg' },
+    { name: 'Onions', price: '₹35/kg', img: '/images/onions.jpg' },
+    { name: 'Carrots', price: '₹40/kg', img: '/images/carriot.jpg' },
   ],
   Dairy: [
-    { name: 'Milk', price: '₹55/litre', img: './images/milk.jpg' },
-    { name: 'Cheese', price: '₹220/pack', img: './images/cheese.jpg' },
-    { name: 'Butter', price: '₹95/pack', img: './images/butter.jpg' },
-    { name: 'Yogurt', price: '₹40/cup', img: './images/yogurt.jpg' },
+    { name: 'Milk', price: '₹55/litre', img: '/images/milk.jpg' },
+    { name: 'Cheese', price: '₹220/pack', img: '/images/cheese.jpg' },
+    { name: 'Butter', price: '₹95/pack', img: '/images/butter.jpg' },
+    { name: 'Yogurt', price: '₹40/cup', img: '/images/yogurt.jpg' },
   ],
   Beverages: [
-    { name: 'Juice', price: '₹60/bottle', img: './images/juice.jpg' },
-    { name: 'Soda', price: '₹30/bottle', img: './images/soda.jpg' },
-    { name: 'Tea', price: '₹100/pack', img: './images/tea.jpg' },
+    { name: 'Juice', price: '₹60/bottle', img: '/images/juice.jpg' },
+    { name: 'Soda', price: '₹30/bottle', img: '/images/soda.jpg' },
+    { name: 'Tea', price: '₹100/pack', img: '/images/tea.jpg' },
     { name: 'Coffee', price: '₹200/pack', img: 'images/coffe.jpg' },
   ],
 };

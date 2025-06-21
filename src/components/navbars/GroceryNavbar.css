@@ -1,0 +1,26 @@
+.grocery-navbar {
+  background-color: #0f0f0f;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.grocery-navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.grocery-navbar a:hover {
+  color: #00cc66;
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 600px) {
+  .grocery-navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,24 @@
+.transport-navbar {
+  background-color: #111111;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.transport-navbar a {
+  text-decoration: none;
+  color: #e2e9f0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.transport-navbar a:hover {
+  color: #005bb5;
+}
+
+.separator {
+  color: #999;
+}

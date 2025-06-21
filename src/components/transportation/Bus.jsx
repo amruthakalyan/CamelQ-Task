@@ -6,12 +6,12 @@ const busOptions = [
   {
     name: 'Volvo AC Bus',
     price: '₹500',
-    img: '/images/volvo.jpg',
+    img: '/CamelQ-Task/images/volvo.jpg',
   },
   {
     name: 'Sleeper Bus',
     price: '₹750',
-    img: '/images/sleeper.jpg',
+    img: '/CamelQ-Task/images/sleeper.jpg',
   },
 ];
 

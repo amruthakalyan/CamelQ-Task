@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import './Transportation.css';
 
 const flightOptions = [
-  { name: 'IndiGo', price: '₹3500', img: '/images/indigo.jpg' },
-  { name: 'Air India', price: '₹4200', img: '/images/airindia.jpg' },
+  { name: 'IndiGo', price: '₹3500', img: '/CamelQ-Task/images/indigo.jpg' },
+  { name: 'Air India', price: '₹4200', img: '/CamelQ-Task/images/airindia.jpg' },
 ];
 
 const Flight = () => {

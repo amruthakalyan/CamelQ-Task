@@ -5,16 +5,16 @@ import { useCart } from '../context/CartContext';
 
 const shoppingData = {
   Fashion: [
-    { name: 'T-Shirt', price: '₹499', img: '/images/tshirt.jpg' },
-    { name: 'Jeans', price: '₹999', img: '/images/jeans.jpg' },
-    { name: 'Jacket', price: '₹1499', img: '/images/jacket.jpg' },
-    { name: 'Shoes', price: '₹1999', img: '/images/shoes.jpg' },
+    { name: 'T-Shirt', price: '₹499', img: '/CamelQ-Task/images/tshirt.jpg' },
+    { name: 'Jeans', price: '₹999', img: '/CamelQ-Task/images/jeans.jpg' },
+    { name: 'Jacket', price: '₹1499', img: '/CamelQ-Task/images/jacket.jpg' },
+    { name: 'Shoes', price: '₹1999', img: '/CamelQ-Task/images/shoes.jpg' },
   ],
   Electronics: [
-    { name: 'Smartphone', price: '₹15,999', img: '/images/phone.jpg' },
-    { name: 'Laptop', price: '₹52,999', img: '/images/laptop.jpg' },
-    { name: 'Headphones', price: '₹2,999', img: '/images/headphones.jpg' },
-    { name: 'Smartwatch', price: '₹4,999', img: '/images/watch.jpg' },
+    { name: 'Smartphone', price: '₹15,999', img: '/CamelQ-Task/images/phone.jpg' },
+    { name: 'Laptop', price: '₹52,999', img: '/CamelQ-Task/images/laptop.jpg' },
+    { name: 'Headphones', price: '₹2,999', img: '/CamelQ-Task/images/headphones.jpg' },
+    { name: 'Smartwatch', price: '₹4,999', img: '/CamelQ-Task/images/watch.jpg' },
   ]
 };
 

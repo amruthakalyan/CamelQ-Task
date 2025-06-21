@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import './Transportation.css';
 
 const trainOptions = [
-  { name: 'Rajdhani Express', price: '₹1200', img: '/images/rajdhani.jpg' },
-  { name: 'Shatabdi Express', price: '₹1000', img: '/images/shatabdi.jpg' },
+  { name: 'Rajdhani Express', price: '₹1200', img: '/CamelQ-Task/images/rajdhani.jpg' },
+  { name: 'Shatabdi Express', price: '₹1000', img: '/CamelQ-Task/images/shatabdi.jpg' },
 ];
 
 const Train = () => {

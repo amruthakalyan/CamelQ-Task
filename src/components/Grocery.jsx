@@ -25,7 +25,7 @@ const groceryData = {
     { name: 'Juice', price: '₹60/bottle', img: '/CamelQ-Task/images/juice.jpg' },
     { name: 'Soda', price: '₹30/bottle', img: '/CamelQ-Task/images/soda.jpg' },
     { name: 'Tea', price: '₹100/pack', img: '/CamelQ-Task/images/tea.jpg' },
-    { name: 'Coffee', price: '₹200/pack', img: '/CamelQ-Taskimages/coffe.jpg' },
+    { name: 'Coffee', price: '₹200/pack', img: '/CamelQ-Task/images/coffe.jpg' },
   ],
 };
 

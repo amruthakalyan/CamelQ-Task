@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 
 import Grocery from './components/Grocery';
 import Shopping from './components/Shopping';
+import Cart from './components/Cart';
+
 // import Bus from './components/transportation/Bus';
 // import Train from './components/transportation/Train';
 // import Flight from './components/transportation/Flight';
@@ -21,14 +23,23 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/grocery" element={<Grocery />} />
+
+
+          <Route path="/grocery" element={<Grocery />} />
+          <Route path="/grocery/categories" element={<Grocery />} />
+          <Route path="/grocery/offers" element={<Grocery />} />
+
+
+
           <Route path="/shopping" element={<Shopping />} />
+          <Route path="/cart" element={<Cart />} />
           {/* <Route path="/transportation/bus" element={<Bus />} />
           <Route path="/transportation/train" element={<Train />} />
           <Route path="/transportation/flight" element={<Flight />} /> */}
 
           <Route path="/transportation/*" element={<Transportation />} />
 
-          
+
         </Routes>
       </main>
 

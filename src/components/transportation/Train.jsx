@@ -22,7 +22,7 @@ const Train = () => {
       <div className="transport-page">
         {!selected ? (
           <>
-            <h2>Available Trains</h2>
+            <h2 style={{color:'white'}}>Available Trains</h2>
             <div className="transport-grid">
               {trainOptions.map((train, i) => (
                 <div key={i} className="transport-option">

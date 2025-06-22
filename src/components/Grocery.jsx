@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import GroceryNavbar from './navbars/GroceryNavbar';
 import './Grocery.css';
 
@@ -30,10 +31,24 @@ const groceryData = {
 };
 
 const Grocery = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cart, setCart] = useState([]);
 
-  const handleBack = () => setSelectedCategory(null);
+  useEffect(() => {
+    const path = location.pathname;
+    if (path.includes('/categories')) {
+      setSelectedCategory(null);
+    } else if (path.includes('/offers')) {
+      setSelectedCategory('Offers');
+    }
+  }, [location.pathname]);
+
+  const handleBack = () => {
+    setSelectedCategory(null);
+    navigate('/grocery/categories');
+  };
 
   const handleAddToCart = (item) => {
     setCart((prevCart) => [...prevCart, item]);
@@ -44,9 +59,14 @@ const Grocery = () => {
     <div>
       <GroceryNavbar />
       <div className="page">
-        {!selectedCategory ? (
+        {selectedCategory === 'Offers' ? (
           <>
-            <h2 style={{color:'white'}}>Choose a Category</h2>
+            <h2 style={{ color: 'white' }}>Special Offers</h2>
+            <p style={{ color: 'white' }}>*Buy 1 Get 1 on selected items</p>
+          </>
+        ) : !selectedCategory ? (
+          <>
+            <h2 style={{ color: 'white' }}>Choose a Category</h2>
             <div className="category-list">
               {Object.keys(groceryData).map((category) => (
                 <div
@@ -83,3 +103,4 @@ const Grocery = () => {
 };
 
 export default Grocery;
+

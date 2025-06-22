@@ -22,7 +22,7 @@ const Flight = () => {
       <div className="transport-page">
         {!selected ? (
           <>
-            <h2>Available Flights</h2>
+            <h2 style={{color:'white'}}>Available Flights</h2>
             <div className="transport-grid">
               {flightOptions.map((flight, i) => (
                 <div key={i} className="transport-option">

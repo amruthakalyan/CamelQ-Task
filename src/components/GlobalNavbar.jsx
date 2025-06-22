@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './GlobalNavbar.css';
 
+
 const GlobalNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

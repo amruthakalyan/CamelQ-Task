@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Grocery from './components/Grocery';
 import Shopping from './components/Shopping';
 import Cart from './components/Cart';
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // import Bus from './components/transportation/Bus';
 // import Train from './components/transportation/Train';
@@ -14,10 +16,31 @@ import Home from './components/Home';
 import GlobalNavbar from './components/GlobalNavbar';
 import Footer from './components/Footer';
 
+
+const BackToHomeHandler = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (location.pathname !== "/") {
+        navigate("/", { replace: true });
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [location.pathname, navigate]);
+
+  return null;
+};
+
+
 function App() {
   return (
     <>
       <GlobalNavbar />
+          <BackToHomeHandler /> 
 
       <main>
         <Routes>

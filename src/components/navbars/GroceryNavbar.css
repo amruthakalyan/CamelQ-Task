@@ -18,9 +18,9 @@
 }
 
 /* Optional: Responsive Design */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .grocery-navbar a {
     display: block;
     margin: 10px 0;
   }
-}
+} */
